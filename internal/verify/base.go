@@ -3,7 +3,7 @@ package verify
 import (
 	"net/http"
 
-	"github.com/tgbv/telnyx-golang/internal"
+	"github.com/WilliamNHarvey/telnyx-golang/internal"
 )
 
 // aliases
@@ -12,8 +12,8 @@ type Config = internal.Config
 var e func(int, []byte) error = internal.E
 
 /*
-*	handles verification related operations
-	see https://portal.telnyx.com/#/app/verify/profiles
+  - handles verification related operations
+    see https://portal.telnyx.com/#/app/verify/profiles
 */
 type Verify struct {
 	Config     *Config

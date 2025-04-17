@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/tgbv/telnyx-golang/config"
+	"github.com/WilliamNHarvey/telnyx-golang/config"
 )
 
 /*

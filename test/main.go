@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	tyx "github.com/tgbv/telnyx-golang/pkg"
+	tyx "github.com/WilliamNHarvey/telnyx-golang/pkg"
 )
 
 const TARGET_PHONE = ""
@@ -149,7 +149,7 @@ func main() {
 
 	// check verification message code
 	//
-	out10, err := Tyx.Verify.Check(TARGET_PHONE, "some code")
+	out10, err := Tyx.Verify.Check(TARGET_PHONE, "some code", "")
 	if err != nil {
 		fmt.Println(err)
 	}

@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/tgbv/telnyx-golang/config"
+	"github.com/WilliamNHarvey/telnyx-golang/config"
 )
 
 /*
-*	get information of a specific number
-	returns error on any possible case
+  - get information of a specific number
+    returns error on any possible case
 */
 func (N *Numbers) Lookup(nr string) (map[string]interface{}, error) {
 

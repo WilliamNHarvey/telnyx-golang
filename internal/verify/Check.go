@@ -6,15 +6,15 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/tgbv/telnyx-golang/config"
+	"github.com/WilliamNHarvey/telnyx-golang/config"
 )
 
 /*
 *	Verify a code sent using Send() method. Unlinke most methods, this one returns a bool. True when code matches, false otherwise.
  */
-func (V *Verify) Check(nr string, code string) (bool, error) {
+func (V *Verify) Check(nr string, code string, profileId string) (bool, error) {
 	// marshal params
-	reqBody, err := json.Marshal(map[string]string{"code": code})
+	reqBody, err := json.Marshal(map[string]string{"code": code, "verify_profile_id": profileId})
 	if err != nil {
 		return false, err
 	}

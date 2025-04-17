@@ -3,7 +3,7 @@ package numbers
 import (
 	"net/http"
 
-	"github.com/tgbv/telnyx-golang/internal"
+	"github.com/WilliamNHarvey/telnyx-golang/internal"
 )
 
 // aliases

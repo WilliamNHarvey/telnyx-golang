@@ -13,12 +13,12 @@ Wrapper for Telnyx API written in Go
 ## How to include
 
 ```
-go get github.com/tgbv/telnyx-golang@d954fc469e692c1618c0c17609346d7c5b1d269c
+go get github.com/WilliamNHarvey/telnyx-golang@d954fc469e692c1618c0c17609346d7c5b1d269c
 ```
 
 ### Telnyx initialization
 ```go
-import tyx "github.com/tgbv/telnyx-golang/pkg"
+import tyx "github.com/WilliamNHarvey/telnyx-golang/pkg"
 
 Telnyx := tyx.init(map[string]interface{}{
   // Telnyx V1 token

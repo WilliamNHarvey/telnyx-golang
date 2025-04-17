@@ -1,3 +1,3 @@
-module github.com/tgbv/telnyx-golang
+module github.com/WilliamNHarvey/telnyx-golang
 
 go 1.15
